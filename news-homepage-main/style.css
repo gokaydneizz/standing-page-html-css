@@ -1,0 +1,166 @@
+body {
+  font-family: "Inter", sans-serif;
+  padding: 100px;
+  overflow: hidden;
+  padding: 50px;
+  background-color: hsl(36, 100%, 99%);
+  font-size: 15px;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.container .nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-wrapper ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-wrapper ul li a {
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  margin-top: 4em;
+  gap: 5%;
+}
+
+.content-div {
+  width: 70%;
+}
+
+.content-div img {
+  width: 100%;
+  height: 300px;
+}
+
+.news-div {
+  width: 30%;
+}
+
+.content-details {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 12%;
+  padding: 1.3em 0;
+}
+
+.content-details-title h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.content-details-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-details-description p {
+  color: hsl(236, 13%, 42%);
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.content-details-description button {
+  width: 45%;
+  margin-bottom: 30px;
+  height: 45px;
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.content-details-description button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.news-div {
+  padding: 20px;
+  background-color: hsl(240, 100%, 5%);
+}
+
+.news-item:not(:last-child) {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 70px;
+}
+
+.news-div > h1 {
+  color: hsl(35, 77%, 62%);
+  padding-bottom: 40px;
+}
+
+.news-div .news-item h1 {
+  color: #fff;
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+}
+
+.news-div .news-item p {
+  color: hsl(236, 13%, 42%);
+}
+
+footer {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.footer-item {
+  display: flex;
+  width: 25px;
+  height: 15%;
+  flex: 1;
+}
+
+.footer-item img {
+  width: 120px;
+}
+
+.footer-item h1 {
+  color: hsl(233, 8%, 79%);
+}
+
+.footer-item-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+.footer-item-detail h1 {
+  margin-bottom: 10px;
+}
+
+.footer-item-detail h2 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.footer-item-detail p {
+  color: hsl(236, 13%, 42%);
+}
